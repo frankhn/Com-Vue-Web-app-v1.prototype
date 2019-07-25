@@ -89,10 +89,10 @@
 <script>
 export default {
 
-};
+}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .menu-container {
     line-height: 0.1;
     font-size: small;
@@ -101,7 +101,6 @@ export default {
 .bg-dark {
     padding: 0 10%;
     background-color: #53A831!important;
-}
 .btn-outline-success {
     border: 1px solid white;
     border-radius: .4em;
@@ -109,10 +108,11 @@ export default {
     .btn-outline-success:hover {
       background: #0e1d24;
       border: none;
-    } 
-    /* svg {
+    }
+    svg {
         path: { fill: white; }
-      } */
+      }
+}
 
 .navbar-icon-top .navbar-nav .nav-link > .fa {
   position: relative;
@@ -230,7 +230,6 @@ export default {
 .dropdown-div {
   position: relative;
   display: inline-block;
-}
 .dropdown-content {
    display: none;
    right: 0;
@@ -241,10 +240,11 @@ export default {
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  /* a {
+  a {
     width: 100%;
     display: block
-  }  */
+  }
+}
 }
 .nav-item:hover .dropdown-content {
   display: block;

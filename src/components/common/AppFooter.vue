@@ -34,7 +34,7 @@
         <div class="col-md-2 col-sm-6 col-xs-6">
           <h5 id="footerheaders">More From Us</h5>
           <div class="list-container">
-            <a href="#" id="footerlinks">Comdeni 365 &trade;</a><br> 
+            <a href="#" id="footerlinks">Comdeni 365 &trade;</a><br>
             <a href="#" id="footerlinks">Comdeni Planet Foundation</a><br>
             <a href="#" id="footerlinks">E-Dealing Kids Foundation</a><br>
           </div>
@@ -132,7 +132,7 @@ export default {
 	cursor: pointer;
 	color: #757575;
 	margin-top: 130px;
-	fill: currentColor;    
+	fill: currentColor;
 	display: block;
 	background: #fff;
 	border-radius: 50%;
@@ -162,7 +162,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 	#notbase{
 	margin-top:10px;
 	border: none;
-}	
+}
 }
 
 #footerheaders{
@@ -170,12 +170,9 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
     font-size: 13px;
     line-height: 24px;
     margin: 0 0 6px;
-    color: var(--color-black);    
+    color: var(--color-black);
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 }
 
 </style>
-
-
-
