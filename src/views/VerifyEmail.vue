@@ -6,7 +6,7 @@
 
 <script>
 // @ is an alias to /src
-import EmailVerification from '@/components/layout/registration/EmailVerification.vue';
+import EmailVerification from '@/components/layout/registration/EmailVerification.vue'
 
 export default {
   components: {

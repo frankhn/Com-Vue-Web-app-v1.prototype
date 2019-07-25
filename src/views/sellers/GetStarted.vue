@@ -4,7 +4,7 @@
 
 <script>
 // @ is an alias to /src
-import GetStarted from '@/components/layout/sellers/GetStarted.vue';
+import GetStarted from '@/components/layout/sellers/GetStarted.vue'
 
 export default {
   components: {

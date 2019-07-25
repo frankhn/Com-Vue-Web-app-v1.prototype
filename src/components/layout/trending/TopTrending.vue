@@ -78,7 +78,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .trending {
   width: 100%;
   display: -webkit-inline-box;
@@ -135,5 +135,13 @@ export default {};
 .based-product-description {
   font-size: 12px;
   text-transform: initial;
+}
+@media only screen and (max-width: 1300px) {
+  .details {
+    display: none;
+  }
+  .user-based {
+    width: 100%
+  }
 }
 </style>

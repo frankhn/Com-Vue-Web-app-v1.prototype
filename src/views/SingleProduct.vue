@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import BuyProduct from "@/components/layout/product/BuyProduct.vue";
-import Footer from "@/components/common/AppFooter.vue";
-import Header from "@/components/common/AppHeader.vue";
+import BuyProduct from "@/components/layout/product/BuyProduct.vue"
+import Footer from "@/components/common/AppFooter.vue"
+import Header from "@/components/common/AppHeader.vue"
 
 export default {
   name: "product",
