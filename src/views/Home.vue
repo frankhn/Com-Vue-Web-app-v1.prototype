@@ -4,7 +4,7 @@
     <div class="mega-menu-container">
       <MegaMenu />
     </div>
-    <hr />
+    <hr id="divider"/>
     <div class="body-container">
       <TopTrending />
       <Featured />
@@ -33,12 +33,15 @@ export default {
 </script>
 <style>
 .mega-menu-container {
-  position: sticky;
   padding: 0 10%;
   margin-top: .6em;
+}
+#divider {
+  margin:0;
 }
 .body-container {
   padding: 0 10%;
   margin-top: .6em;
+  position: relative;
 }
 </style>

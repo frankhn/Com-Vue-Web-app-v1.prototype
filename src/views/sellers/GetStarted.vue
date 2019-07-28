@@ -7,6 +7,7 @@
 import GetStarted from '@/components/layout/sellers/GetStarted.vue'
 
 export default {
+  name: "get-started",
   components: {
     GetStarted
   },

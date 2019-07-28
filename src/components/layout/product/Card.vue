@@ -1,5 +1,6 @@
 <template>
     <div class="product-card">
+      <router-link to="/deal/prototype">
       <div class="product-tumb">
         <img src="@/assets/background/p.jpg" alt />
       </div>
@@ -24,6 +25,7 @@
           </div>
         </div>
       </div>
+      </router-link>
     </div>
 </template>
 

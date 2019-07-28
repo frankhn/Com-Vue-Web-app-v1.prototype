@@ -86,10 +86,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-/* center container in the middle */
 .container-div {
   padding: 0 10%;
 }

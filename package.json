@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "node ./server.js",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
@@ -15,6 +15,8 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.27",
+    "connect-history-api-fallback": "^1.6.0",
+    "express": "^4.17.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

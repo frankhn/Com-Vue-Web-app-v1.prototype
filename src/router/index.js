@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home'
 import About from '@/views/companyProfile/About'
-import VerifyEmail from '@/views/verifyEmail'
+import VerifyEmail from '@/views/VerifyEmail'
 import GetStarted from '@/views/sellers/GetStarted'
 import SingleProduct from '@/views/SingleProduct'
 import Profile from '@/views/profile/Index'
@@ -29,7 +29,7 @@ export default new Router({
     },
     {
       path: '/getstarted',
-      name: 'verify Email',
+      name: 'getStarted',
       component: GetStarted
     },
     {
@@ -41,6 +41,10 @@ export default new Router({
       path: '/profile/:username',
       name: 'profile',
       component: Profile
+    },
+    {
+      path: '*',
+      redirect: '/'
     }
   ]
 })
