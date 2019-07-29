@@ -241,16 +241,14 @@ export default {};
 
 <style lang="scss" scoped>
 .menu-container {
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   li {
     list-style-type: none;
   }
   a {
     text-decoration: none;
-  }
-  div {
-    flex: 1;
   }
   .menu-item {
     float: left;

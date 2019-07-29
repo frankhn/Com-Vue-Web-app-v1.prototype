@@ -115,7 +115,7 @@ export default {
 #footerlinks{
 	color:#75787B;
 	font-family: Open Sans,OpenSans,system,-apple-system,BlinkMacSystemFont,Roboto,Arial,FreeSans,sans-serif;
-	font-size: 13px;
+	font-size: 14px;
     line-height: 20px;
     box-sizing: border-box;
     color: #75787b;
