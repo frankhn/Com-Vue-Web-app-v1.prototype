@@ -1,8 +1,8 @@
 <template>
-    <div class="col-md-8">
+    <div class="company-product-details">
       <br />
       <h4>
-        <strong>Product Details</strong>
+        <strong>Here is who I am now</strong>
       </h4>
       <div id="showproductdetails">
         <p>Product Details Here</p>
@@ -67,6 +67,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.company-product-details {
+  background: gray;
+}
 </style>

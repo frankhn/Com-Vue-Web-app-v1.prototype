@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <Header />
+  <section class="home">
+    <AppHeader />
     <div class="mega-menu-container">
       <MegaMenu />
     </div>
@@ -10,20 +10,20 @@
       <Featured />
     </div>
     <Footer />
-  </div>
+  </section>
 </template>
 
 <script>
 // @ is an alias to /src
 import Footer from '@/components/common/AppFooter.vue'
-import Header from '@/components/common/AppHeader.vue'
+import AppHeader from '@/components/common/AppHeader.vue'
 import MegaMenu from '@/components/common/megamenu/Index.vue'
 import TopTrending from '@/components/layout/trending/TopTrending.vue'
 import Featured from '@/components/layout/featured/Featured.vue'
 
 export default {
   components: {
-    Header,
+    AppHeader,
     MegaMenu,
     TopTrending,
     Featured,

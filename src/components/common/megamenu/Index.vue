@@ -1,8 +1,4 @@
 <template>
-  <!-- <div class="navbar navbar-default" role="navigation" id="featurednav">
-					<div class="collapse navbar-collapse js-navbar-collapse"
-						id="bs-example-navbar-collapse-1">
-  <div class="row">-->
   <div class="menu-container">
     <div class="menu-item">
       <a href="#" id="featuredlinknav">Featured</a>

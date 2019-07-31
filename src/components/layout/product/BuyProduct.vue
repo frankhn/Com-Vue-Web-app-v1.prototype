@@ -1,67 +1,115 @@
 <template>
-  <div class="row">
-    <div class="col-md-12">
-      <h4>
-        product.name
-      </h4>
+  <div class="page-container">
+    <div class="product-name">
+      <h4>Hello people</h4>
     </div>
-    <div class="col-md-8 col-sm-12 col-xs-12 item-photo">
-      <div id="mycarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#mycarousel" data-slide-to="1"></li>
-          <li data-target="#mycarousel" data-slide-to="2"></li>
-          <li data-target="#mycarousel" data-slide-to="3"></li>
-          <li data-target="#mycarousel" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
+    <section class="product-container">
+      <div class="big-photo">
+        <div class="currentImage">
+          <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+        </div>
+        <div class="thumbnails">
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div><div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
+            <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
+          </div>
+          <div class="thumb">
             <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
           </div>
         </div>
-        <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
       </div>
+      <Options />
+    </section>
+    <div class="details-keeper">
+    <Details />
+    <div class="empty-palce">
     </div>
-	<Options />
-	<Details />
+    </div>
   </div>
 </template>
 
 <script>
-import Details from '@/components/layout/product/Details'
-import Options from '@/components/layout/product/Options'
+import Details from "@/components/layout/product/Details";
+import Options from "@/components/layout/product/Options";
 export default {
-	name: "Singleproduct",
-	components: {
-		Options,
-		Details
-	}
+  name: "Singleproduct",
+  components: {
+    Options,
+    Details
+  }
 };
 </script>
 
-<style lang="scss" scoped>
-* {
-  text-transform: capitalize;
-}
+<style lang="scss">
+.product-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  // grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  grid-gap: 1em;
+grid-template-rows: 29em;
 
-#singleproductimage {
-  width: 100%;
-  height: 26em;
+  .big-photo {
+    // display: grid;
+    .currentImage {
+      height: 80%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .thumbnails {
+    display: flex;
+    height: 20%;
+    
+    overflow: auto;
+  .thumb {
+     img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  }
+    }
+  }
+  .details-keeper {
+    display: grid;
+grid-template-columns: 2fr 1fr;
+grid-gap: 1em;
+  }
 }
-
-#svgnotification {
-  height: 12px;
-  width: 16px;
-}
-.div-options {
-  padding: 0;
-}
-.product-labels {
-	padding: 0;
-}
+.details-keeper {
+    display: grid;
+grid-template-columns: 2fr 1fr;
+grid-gap: 1em;
+margin-top: 1em;
+  }
 </style>
