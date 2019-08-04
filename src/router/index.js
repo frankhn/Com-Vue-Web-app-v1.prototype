@@ -2,10 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home'
 import About from '@/views/companyProfile/About'
-import VerifyEmail from '@/views/VerifyEmail'
+import VerifyEmail from '@/views/account/VerifyEmail'
+import login from '@/views/account/Login'
 import GetStarted from '@/views/sellers/GetStarted'
 import SingleProduct from '@/views/SingleProduct'
 import Profile from '@/views/profile/Index'
+import Browse from '@/views/BrowseByCategory/Index'
 
 Vue.use(Router)
 
@@ -22,25 +24,51 @@ export default new Router({
       name: 'about',
       component: About
     },
+
+
+    /************************ Account Routes */
     {
       path: '/verify',
       name: 'verify Email',
-      component: VerifyEmail
+      component: VerifyEmail,
     },
     {
-      path: '/getstarted',
-      name: 'getStarted',
-      component: GetStarted
+      path: '/login',
+      name: 'verify Email',
+      component: login,
     },
+
+
+    /************************ Product Routes */
     {
       path: '/deal/:slug',
       name: 'product',
       component: SingleProduct
     },
     {
-      path: '/profile/:username',
-      name: 'profile',
+      path: '/me/:username',
+      name: 'me',
       component: Profile
+    },
+    {
+      path: '/browse/:query',
+      name: 'Filter by Category',
+      component: Browse
+    },
+    {
+      path: '/getstarted',
+      name: 'getStarted',
+      component: GetStarted,
+    },
+    {
+      path: '/getstarted/solutions',
+      name: 'solutions',
+      component: GetStarted
+    },
+    {
+      path: '/getstarted/resources',
+      name: 'resources',
+      component: GetStarted
     },
     {
       path: '*',

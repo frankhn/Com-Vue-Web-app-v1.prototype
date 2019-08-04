@@ -2,8 +2,8 @@
   <div class="container" id="LoginForm">
     <div class="login-form">
       <div class="panel">
-        <h2>Brand Here</h2>
-        <p>Please enter your email below</p>
+        <h2>Brand</h2>
+        <p>Please enter your email and password</p>
       </div>
       <form id="Login" accept-charset="UTF-8">
         <div class="form-group">
@@ -16,15 +16,26 @@
             required
           />
         </div>
-        <button type="submit" class="btn btn-primary">Send Link</button>
-      </form>
-      <div class="forgot">
-          <router-link to="/login"  >Login</router-link>
+
+        <div class="form-group">
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            id="inputPassword"
+            placeholder="Password"
+            required
+          />
         </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+       <div class="forgot">
+          <router-link to="/forgotpassword">Forgot Password</router-link>
+
+          <router-link to="/verify" class="create" >Create Accounts</router-link>
+        </div>
+      <p class="botto-text">BrandName All Rights Reserved 2019 </p>
     </div>
-    <center>
-      <p class="botto-text">E-Dealing All Rights Reserved</p>
-    </center>
   </div>
 </template>
 
@@ -34,7 +45,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 .form-heading { color:#fff; font-size:23px;}
 .panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
@@ -62,18 +73,16 @@ export default {
 .login-form{   
 	margin: 0 auto;
 	text-align:center;
-  width: 366px;
+  width: 38%;
 padding: 3em;
 background: url('../../../assets/background/p.jpg');
+object-fit: cover;
 margin-top: 5em;
 	}
-.forgot {
-  text-align: left;  
-  a {
+.forgot a {
   color: #fff;
   font-size: 14px;
   text-decoration: underline;
-}
 }
 .login-form  .btn.btn-primary {
   background: #53A318 none repeat scroll 0 0;   /*#f0ad4e orange*/
@@ -84,17 +93,19 @@ margin-top: 5em;
   height: 50px;
   line-height: 50px;
   padding: 0;
-  margin: 0 0 2em
+  margin-top: 10px;
+}
+.forgot {
+  text-align: left;
 }
 .create{
 	 text-align: right;
 	 float: right;
 }
 .botto-text {
-  color: #ffffff;
+  color: #000;
   font-size: 14px;
-  margin-top: 100px;
-  bottom: 0;
+ margin: 2em auto 0;
   
 }
 .login-form .btn.btn-primary.reset {
@@ -105,6 +116,27 @@ margin-top: 5em;
 .form-heading{
 	margin-bottom: 40px;
 	margin-top: 30px;
+}
+@media only screen and (max-width: 1074px) {
+  .login-form {
+    width: 45%
+  }
+}
+@media only screen and (max-width: 992px) {
+  .login-form {
+    width: 60%
+  }
+}
+@media only screen and (max-width: 768px) {
+  .login-form {
+    width: 80%
+  }
+}
+@media only screen and (max-width: 500px) {
+  .login-form {
+    width: 100%;
+margin-top: 1em;
+  }
 }
 </style>
 

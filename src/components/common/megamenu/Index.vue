@@ -12,7 +12,7 @@
           <div class="col-lg-2 col-md-2 mega-lists">
             <ul>
               <li>
-                <a id="dropdownlinks" href="#">Personal services</a>
+                <router-link id="dropdownlinks" to="/browse/:query">Personal services</router-link>
               </li>
               <li>
                 <a id="dropdownlinks" href="#">Health & Fitness</a>
