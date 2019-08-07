@@ -35,6 +35,9 @@ export default {
 };
 </script>
 <style>
+.home {
+      background-color: rgb(245,245,245); 
+}
 .mega-menu-container {
   padding: 0 10%;
   margin-top: .6em;

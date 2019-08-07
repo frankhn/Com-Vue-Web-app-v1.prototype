@@ -1,6 +1,6 @@
 <template>
-    <div class="product-card">
-      <router-link to="/deal/prototype">
+  <div class="product-card">
+    <router-link to="/deal/prototype">
       <div class="product-tumb">
         <img src="@/assets/background/p.jpg" alt />
       </div>
@@ -19,20 +19,18 @@
             <a href>
               <i class="fa fa-shopping-cart"></i>
             </a>
-          </div> -->
+          </div>-->
           <div class="product-price">
             <small>$96.00</small>$230.99
           </div>
         </div>
       </div>
-      </router-link>
-    </div>
+    </router-link>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
@@ -40,112 +38,95 @@ export default {
   padding: 0;
   overflow: hidden;
   display: inline-block;
-  /* position: relative; */
 }
 .product-card {
-    box-shadow: 0 2px 7px #dfdfdf;
-    background: #fafafa;
-        border-top-right-radius: .3em;
-    border-top-left-radius: .3em;
+  box-shadow: 0 2px 7px #dfdfdf;
+  background: #fafafa;
+  border-top-right-radius: 0.3em;
+  border-top-left-radius: 0.3em;
 }
 
 .badge {
-    position: absolute;
-    left: 0;
-    /* top: 20px; */
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    /* background: red; */
-    color: #fff;
-    padding: 3px 10px;
+  position: absolute;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  padding: 3px 10px;
 }
 
 .product-tumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
 }
 
 .product-tumb img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .product-details {
-    padding: .2em;
+  padding: 0.2em;
 }
 
-/* .product-catagory {
-    display: block;
-    font-size: .6em;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ccc;
-    margin-bottom: 18px;
-} */
-
 .product-details h4 a {
-    font-weight: 500;
-    display: block;
-    /* margin-bottom: 18px; */
-    text-transform: uppercase;
-    color: #363636;
-    text-decoration: none;
-    transition: 0.3s;
+  font-weight: 500;
+  display: block;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .product-details h4 a:hover {
-    color: #fbb72c;
+  color: #fbb72c;
 }
 
 .product-details p {
-    font-size: .5em;
-    font-size: .8em;
-    /* line-height: 22px; */
-    /* margin-bottom: 18px; */
-    color: #999;
+  font-size: 0.5em;
+  font-size: 0.8em;
+  color: #999;
 }
 
 .product-bottom-details {
-    overflow: hidden;
-    /* border-top: 1px solid #eee; */
-    /* padding-top: 20px; */
+  overflow: hidden;
 }
 
 .product-bottom-details div {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .product-price {
-    font-size: 18px;
-    color: #fbb72c;
-    font-weight: 600;
+  font-size: 18px;
+  color: #fbb72c;
+  font-weight: 600;
 }
 
 .product-price small {
-    font-size: 80%;
-    font-weight: 400;
-    text-decoration: line-through;
-    display: inline-block;
-    margin-right: 5px;
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .product-links {
-    text-align: right;
+  text-align: right;
 }
 
 .product-links a {
-    display: inline-block;
-    margin-left: 5px;
-    color: #e1e1e1;
-    transition: 0.3s;
-    font-size: 17px;
+  display: inline-block;
+  margin-left: 5px;
+  color: #e1e1e1;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
 .product-links a:hover {
-    color: #fbb72c;
+  color: #fbb72c;
 }
 </style>

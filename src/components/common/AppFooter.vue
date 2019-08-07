@@ -119,7 +119,6 @@ export default {
     line-height: 20px;
     box-sizing: border-box;
     color: #75787b;
-    background-color: white;
 }
 #directiosvg{
 	font-size: medium;
