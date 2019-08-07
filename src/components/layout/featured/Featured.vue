@@ -1,6 +1,10 @@
 <template>
   <div class="featured-container">
    <Card />
+   <Card />
+   <Card />
+   <Card />
+   <Card />
   </div>
 </template>
 
@@ -16,7 +20,9 @@ export default {
 
 <style>
 .featured-container {
-  padding: 0;
-  overflow: hidden;
+  display: grid;
+  width: 100%;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 </style>

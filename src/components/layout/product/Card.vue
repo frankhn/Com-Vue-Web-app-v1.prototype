@@ -43,11 +43,10 @@ export default {
   /* position: relative; */
 }
 .product-card {
-    width: 380px;
-    position: relative;
     box-shadow: 0 2px 7px #dfdfdf;
-    margin: 0 auto;
     background: #fafafa;
+        border-top-right-radius: .3em;
+    border-top-left-radius: .3em;
 }
 
 .badge {

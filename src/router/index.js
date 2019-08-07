@@ -51,7 +51,7 @@ export default new Router({
       component: Profile
     },
     {
-      path: '/browse/:query',
+      path: '/browse/:superCategory/:query',
       name: 'Filter by Category',
       component: Browse
     },

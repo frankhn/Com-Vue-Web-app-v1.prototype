@@ -1,9 +1,9 @@
 <template>
   <section class="trending">
     <div class="top-trending">
-      <img src="@/assets/background/p.jpg" />
+      <img class="top-trending-img" src="@/assets/background/p.jpg" />
     </div>
-    <div class="details">
+    <!-- <div class="details">
       <p class="productname">This is the product name and here we are</p>
       <p class="productdescription">
         Smartphones are, of course, powerful gadgets that have allowed us to do things which,
@@ -11,7 +11,7 @@
         media, a place that has made a great...
       </p>
       <button type="submit" class="veiw">View</button>
-    </div>
+    </div>-->
     <div class="user-based">
       <div class="based-card">
         <div class="based-image">
@@ -19,8 +19,13 @@
         </div>
 
         <div class="based-description">
-          <div class="description-header">Smartphones gadgets</div>
-          <div class="based-product-description">But they become the gateway a place that made a great...</div>
+          <!-- <div class="description-header">Smartphones gadgets</div> -->
+          <div
+            class="based-product-description"
+          >But they become the gateway a place that made a great...</div>
+          <div class="based-product-price">
+            <small>$96.00</small>39$
+          </div>
         </div>
       </div>
 
@@ -30,8 +35,12 @@
         </div>
 
         <div class="based-description">
-          <div class="description-header">Smartphones gadgets</div>
-          <div class="based-product-description">But they become the gateway a place that made a great...</div>
+          <div
+            class="based-product-description"
+          >But they become the gateway a place that made a great...</div>
+          <div class="based-product-price">
+            <small>$96.00</small>$20.99
+          </div>
         </div>
       </div>
 
@@ -41,8 +50,12 @@
         </div>
 
         <div class="based-description">
-          <div class="description-header">Smartphones gadgets</div>
-          <div class="based-product-description">But they become the gateway a place that made a great...</div>
+          <div
+            class="based-product-description"
+          >But they become the gateway a place that made a great...</div>
+          <div class="based-product-price">
+            <small>$96.00</small>$0.99
+          </div>
         </div>
       </div>
 
@@ -52,8 +65,42 @@
         </div>
 
         <div class="based-description">
-          <div class="description-card-header">Smartphones gadgets</div>
-          <div class="based-product-description">But they become the gateway a place that made a great...</div>
+          <div
+            class="based-product-description"
+          >But they become the gateway a place that made a great...</div>
+          <div class="based-product-price">
+            <small>$96.00</small>230.99$
+          </div>
+        </div>
+      </div>
+
+      <div class="based-card">
+        <div class="based-image">
+          <img id="div-based-image" src="@/assets/background/p.jpg" />
+        </div>
+
+        <div class="based-description">
+          <div
+            class="based-product-description"
+          >But they become the gateway a place that made a great...</div>
+          <div class="based-product-price">
+            <small>$96.00</small>$230.99
+          </div>
+        </div>
+      </div>
+
+      <div class="based-card">
+        <div class="based-image">
+          <img id="div-based-image" src="@/assets/background/p.jpg" />
+        </div>
+
+        <div class="based-description">
+          <div
+            class="based-product-description"
+          >But they become the gateway a place that made a great...</div>
+          <div class="based-product-price">
+            <small>$96.00</small>$230.99
+          </div>
         </div>
       </div>
     </div>
@@ -66,72 +113,47 @@ export default {};
 
 <style lang="scss" scoped>
 .trending {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 0.8rem;
   height: 22em;
-  margin-bottom: 10px;
-  justify-content: space-around;
-  flex-direction: row;
 
   .top-trending {
-    flex: 3;
-    padding-right: 0.5rem;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-top-left-radius: 5px;
-    }
-  }
-  .details {
-    padding: 0 0.5rem 0;
-    flex: 1.2;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    .productname {
-      font-weight: 400;
-      font-size: larger;
-    }
-
-    .productdescription {
-      flex: 2;
-      font-size: medium;
-      color: #525258;
-      font-weight: 400;
-    }
-    .veiw {
-      width: 50%;
-      height: 2rem;
-      border: none;
-      color: white;
-      background: #53a831;
-      margin-left: 50%;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    .top-trending-img {
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      border-radius: .3em;
     }
   }
-
   .user-based {
     flex: 1.8;
     border-top-right-radius: 5px;
     overflow: scroll;
 
     .based-card {
-      display: flex;
+      display: grid;
       justify-content: space-between;
       height: 5.6rem;
-      margin-bottom: .5em;
+      grid-template-columns: 2fr 2fr;
+    grid-gap: .5em;
+      margin-bottom: 0.5em;
       .based-image {
         flex: 1;
         img {
           width: 100%;
-          height: 100%;
+          max-height: 100%;
+          max-width: 100%;
           object-fit: cover;
+          border-radius: .3em;
         }
       }
       .based-description {
-        flex: 1.3;
         display: flex;
-        padding: 0 .3rem 0;
         flex-direction: column;
         justify-content: start;
 
@@ -139,51 +161,33 @@ export default {};
           font-size: 1rem;
         }
         .based-product-description {
-          font-size: .9em;
+          font-size: 0.9em;
           font-weight: 200;
+        }
+        .based-product-price {
+          color: #53A831;
+          text-align: end;
+          font-size: 1em;
+    font-weight: 400;
+        }
+        .based-product-price small {
+          font-size: 70%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+    color: brown;
         }
       }
     }
   }
+  @media only screen and (max-width: 1400px) {
+    .top-trending {
+      width: 100;
+    }
+    .user-based {
+      display: none;
+    }
+  }
 }
-// .based-card {
-//   line-height: 6em;
-//   display: flex;
-//   height: 6em;
-//   padding: 0;
-//   margin-bottom: .5em;
-//   justify-content: space-between;
-// }
-// #img-card {
-//   height: auto;
-// }
-// .based-description {
-//   display: block;
-//   width: 60%;
-//   padding: 0;
-//   background: #cfd4d6;
-// }
-// .based-image {
-//    width: 40%;
-//    padding: 0
-// }
-// #div-based-image {
-//     max-height:100%;
-//     max-width:100%;
-// }
-// .based-product-name {
-//   font-size: larger
-// }
-// .based-product-description {
-//   font-size: 12px;
-//   text-transform: initial;
-// }
-// @media only screen and (max-width: 1300px) {
-//   .details {
-//     display: none;
-//   }
-//   .user-based {
-//     width: 100%
-//   }
-// }
 </style>

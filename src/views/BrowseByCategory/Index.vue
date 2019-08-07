@@ -58,7 +58,6 @@ export default {
 .body-container {
   padding: 0 10%;
   margin-top: 0.6em;
-  position: relative;
   .products-section {
       margin: 3em 0;
   }
