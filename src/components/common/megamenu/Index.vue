@@ -66,11 +66,11 @@
             </ul>
           </div>
           <div class="img-ad col-md-3">
-            <img src="@/assets/background/p.jpg" alt />
+            <img id="menu-img" src="@/assets/background/p.jpg" alt />
           </div>
 
-          <div class="img-ad col-md-3" id="last-img">
-            <img src="@/assets/background/p.jpg" alt />
+          <div class="img-ad col-md-3">
+            <img id="menu-img" src="@/assets/background/p.jpg" alt />
           </div>
         </div>
       </div>
@@ -155,65 +155,76 @@
             </ul>
           </div>
           <div class="col-md-4 img-ad" id="last-img">
-              <img id="backtoschool" src="@/assets/background/p.jpg" alt='image-name' />
+              <img id="menu-img" src="@/assets/background/p.jpg" alt='image-name' />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="menu-item">
+    <div class="menu-item" id="gateways-dropdown-content">
       <a href="#">Gateways</a>
-      <ul class="dropdown-menu mega-dropdown-menu" id="dropdownlocalfeatured">
-        <li class="col-md-3">
-          <ul>
-            <li class="dropdown-header" id="megamenuheaders">
-              Gateways
-              & Tickets
-            </li>
-            <li>
-              <a id="dropdownlinks" href="#">RWANDA Locations</a>
-            </li>
-            <li>
-              <a id="dropdownlinks" href="#">KENYA & UGANDA</a>
-            </li>
-            <!-- <li><a id="dropdownlinks" href="#"></a></li>
-											<li><a id="dropdownlinks" href="#">Southern Africa</a></li> 
-											<li class="divider"></li>
-											<li class="dropdown-header" id="megamenuheaders">Transport Apps</li>
-											<li><a id="dropdownlinks" href="#">Tax,Bus,Air &
-													Train Africa</a></li>
-            <li><a id="dropdownlinks" href="#">Knowledge Society</a></li>-->
-          </ul>
-        </li>
+      <div class="dropdown-content" id="gateways-dropdown-menu-holder">
+        <div class="menu-holder" >
+          <div class="col-lg-2 col-md-2 mega-lists">
+            <ul>
+              <li>
+                <router-link id="dropdownlinks" to="/browse/category/:query">Personal services</router-link>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Health & Fitness</a>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Learning</a>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Foods & Drinks</a>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Home Services</a>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Retails</a>
+              </li>
+            </ul>
+          </div>
 
-        <li class="col-md-3">
-          <ul>
-            <img id="backtoschool" src="@/assets/background/p.jpg" alt />
-            <li class="divider"></li>
-            <!-- <li class="dropdown-header" id="megamenuheaders">Tourism</li>
-											<li><a id="dropdownlinks" href="#">Tour Guides</a></li>
-            <li><a id="dropdownlinks" href="#">Trip Adivser</a></li>-->
-          </ul>
-        </li>
-        <li class="col-md-3">
-          <ul>
-            <img id="backtoschool" src="@/assets/background/p.jpg" alt />
-            <li class="divider"></li>
-            <!-- <li class="dropdown-header" id="megamenuheaders">Renting</li>
-											<li><a id="dropdownlinks" href="#">Aparts & Lodges</a></li>
-            <li><a id="dropdownlinks" href="#"></a></li>-->
-          </ul>
-        </li>
-        <li class="col-md-3">
-          <ul>
-            <img id="backtoschool" src="@/assets/background/p.jpg" alt />
-            <li class="divider"></li>
-            <!-- <li class="dropdown-header" id="megamenuheaders">Fonts</li>
-											<li><a id="dropdownlinks" href="#">Glyphicon</a></li>
-            <li><a id="dropdownlinks" href="#">Google Fonts</a></li>-->
-          </ul>
-        </li>
-      </ul>
+          <div class="col-lg-2 col-md-2 mega-lists">
+            <ul>
+              <li>
+                <a id="dropdownlinks" href="#">Things To Do</a>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Kids Activities</a>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Entertainment</a>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Beauty & Spas</a>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Women's salon</a>
+              </li>
+              <li>
+                <a id="dropdownlinks" href="#">Team Sports</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="gateway-ad-holder col-md-8">
+            <div class="img-ad-gateway">
+           <img src="@/assets/background/p.jpg" alt />
+          </div>
+          <div class="img-ad-gateway">
+            <img src="@/assets/background/p.jpg" alt />
+          </div>
+
+          <div class="img-ad-gateway">
+            <img  src="@/assets/background/p.jpg" alt />
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="menu-item">
@@ -270,10 +281,12 @@ export default {};
       .menu-holder {
         display: inline-flex;
         width: 100%;
-        padding: 0.5em 0 0.6em;
+        padding: 0.5em .51em 0.6em;
         max-height: 14em;
 
         .mega-lists {
+          padding: 0;
+          text-transform: capitalize;
           ul {
             padding: 0;
           }
@@ -294,14 +307,40 @@ export default {};
         }
         .img-ad {
           overflow: hidden;
-          margin-right: 0.2em;
+          padding-left: 0.2em;
+          padding-right: 0;
+        }
+        .gateway-ad-holder{
+          display: grid;
+          grid-gap: .5em;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: 0;
+              margin-left: .2em;
+          .img-ad-gateway{
+            height: 100%;
+          }
+            .img-ad-gateway img {
+          max-width: 100%;
+    max-height: 100%;
+            height: 100%;
+    width: 100%;
+      border-radius: .3em;
+        }
         }
         #last-img {
-          margin-right: 1.2em;
+          padding-left: 0.2em;
+          padding-right: 0;
         }
       }
     }
   }
+  #menu-img {
+          max-width: 100%;
+    max-height: 100%;
+            height: 100%;
+    width: 100%;
+      border-radius: .3em;
+        }
   #local:hover {
     #local-dropdown-content {
       display: block;
@@ -309,6 +348,11 @@ export default {};
   }
   #goods:hover {
     #goods-dropdown-content {
+      display: block;
+    }
+  }
+  #gateways-dropdown-content:hover {
+    #gateways-dropdown-menu-holder{
       display: block;
     }
   }

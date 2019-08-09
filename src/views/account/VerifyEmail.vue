@@ -1,5 +1,5 @@
 <template>
-  <div class="home" id="LoginForm">
+  <div class="home-verify" id="LoginForm">
       <EmailVerification />
   </div>
 </template>

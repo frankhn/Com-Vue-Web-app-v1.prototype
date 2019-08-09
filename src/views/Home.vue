@@ -40,7 +40,7 @@ export default {
 }
 .mega-menu-container {
   padding: 0 10%;
-  margin-top: .6em;
+  margin-top: 1em;
 }
 #divider {
   margin:0;

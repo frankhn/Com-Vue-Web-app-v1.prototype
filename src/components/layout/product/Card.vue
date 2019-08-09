@@ -20,6 +20,13 @@
               <i class="fa fa-shopping-cart"></i>
             </a>
           </div>-->
+          <!-- <div class="product-star-rating">
+            <span class="fa fa-star checked"></span> <span
+									id="startunchecked" class="fa fa-star checked"></span> <span
+									id="startunchecked" class="fa fa-star "></span> <span
+									id="startunchecked" class="fa fa-star "></span> <span
+									id="startunchecked" class="fa fa-star"></span>
+          </div> -->
           <div class="product-price">
             <small>$96.00</small>$230.99
           </div>
@@ -96,8 +103,8 @@ export default {};
 }
 
 .product-bottom-details div {
-  float: left;
-  width: 50%;
+  float: right;
+  /* width: 100%; */
 }
 
 .product-price {
@@ -129,4 +136,6 @@ export default {};
 .product-links a:hover {
   color: #fbb72c;
 }
+.checked, .price span {
+  color: #ff9f1a; }
 </style>

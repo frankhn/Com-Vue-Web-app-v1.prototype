@@ -16,7 +16,7 @@
             required
           />
         </div>
-        <button type="submit" class="btn btn-primary">Send Link</button>
+        <button type="submit" class="btn btn-primary">Create Account</button>
       </form>
       <div class="forgot">
           <router-link to="/login"  >Login</router-link>
@@ -64,7 +64,9 @@ export default {
 	text-align:center;
   width: 366px;
 padding: 3em;
-background: url('../../../assets/background/p.jpg');
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+// background: url('../../../assets/background/p.jpg');
+background: rgb(245,245,245);
 margin-top: 5em;
 	}
 .forgot {

@@ -13,8 +13,8 @@ export default {
 <style lang="scss" scoped>
 .ad {
     width: 100%;
-    height: 7em;
-    max-height: 7em;
+    height: 6em;
+    max-height: 6em;
     margin: 1em 0;
 
     .ad-img {

@@ -18,7 +18,7 @@
           </div>
         </div>
 
-        <div class="col-md-2 ">
+        <div class="col-md-2 col-sm-6 col-xs-6">
           <h5 id="footerheaders">Work with E-dealing</h5>
           <div class="list-container">
             <a href='#' id="footerlinks">How E-dealing Works</a><br>
@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-6 col-xs-6">
           <h5 id="footerheaders">Connect with Us</h5>
           <div class="list-container">
             <a href="#" id="footerlinks">Facebook</a><br>
@@ -51,7 +51,29 @@
             <a href="#" id="footerlinks">Pinterest</a><br>
           </div>
         </div>
-        <div class="col-md-4">
+         <div class="col-md-2 col-sm-6 col-xs-6">
+          <h5 id="footerheaders">Connect with Us</h5>
+          <div class="list-container">
+            <a href="#" id="footerlinks">Facebook</a><br>
+            <a href="#" id="footerlinks">Twitter</a><br>
+            <a href="#" id="footerlinks">Instagram</a><br>
+            <a href="#" id="footerlinks">Youtube</a><br>
+            <a href="#" id="footerlinks">Google +</a><br>
+            <a href="#" id="footerlinks">Pinterest</a><br>
+          </div>
+        </div>
+         <div class="col-md-2">
+          <h5 id="footerheaders">Connect with Us</h5>
+          <div class="list-container">
+            <a href="#" id="footerlinks">Facebook</a><br>
+            <a href="#" id="footerlinks">Twitter</a><br>
+            <a href="#" id="footerlinks">Instagram</a><br>
+            <a href="#" id="footerlinks">Youtube</a><br>
+            <a href="#" id="footerlinks">Google +</a><br>
+            <a href="#" id="footerlinks">Pinterest</a><br>
+          </div>
+        </div>
+        <!-- <div class="col-md-4">
           <div class="list-container" style="background:#53A318">
             <p style="color:#fff">Get The E-dealing Mobile App Right Here Now</p>
             <p style="color:#fff">.</p>
@@ -62,7 +84,7 @@
             <p><a href="#" style="color:#fff">Comdeni Merchants</a></p>
             <p><a href="#" style="color:#fff">Comdeni Merchants</a></p>
           </div>
-        </div>
+        </div> -->
 
       </div>
       <br>
@@ -85,7 +107,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container-div {
   padding: 0 10%;
 }
