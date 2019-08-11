@@ -4,7 +4,7 @@
       <div class="product-tumb">
         <img src="@/assets/background/p.jpg" alt />
       </div>
-      <div class="badge">Hot</div>
+      <!-- <div class="badge">Hot</div> -->
       <div class="product-details">
         <!-- <span class="product-catagory">Women,bag</span> -->
         <h4>
@@ -26,7 +26,7 @@
 									id="startunchecked" class="fa fa-star "></span> <span
 									id="startunchecked" class="fa fa-star "></span> <span
 									id="startunchecked" class="fa fa-star"></span>
-          </div> -->
+          </div>-->
           <div class="product-price">
             <small>$96.00</small>$230.99
           </div>
@@ -59,7 +59,7 @@ export default {};
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   padding: 3px 10px;
 }
 
@@ -136,6 +136,8 @@ export default {};
 .product-links a:hover {
   color: #fbb72c;
 }
-.checked, .price span {
-  color: #ff9f1a; }
+.checked,
+.price span {
+  color: #ff9f1a;
+}
 </style>

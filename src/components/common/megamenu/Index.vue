@@ -155,7 +155,7 @@
             </ul>
           </div>
           <div class="col-md-4 img-ad" id="last-img">
-              <img id="menu-img" src="@/assets/background/p.jpg" alt='image-name' />
+            <img id="menu-img" src="@/assets/background/p.jpg" alt="image-name" />
           </div>
         </div>
       </div>
@@ -164,7 +164,7 @@
     <div class="menu-item" id="gateways-dropdown-content">
       <a href="#">Gateways</a>
       <div class="dropdown-content" id="gateways-dropdown-menu-holder">
-        <div class="menu-holder" >
+        <div class="menu-holder">
           <div class="col-lg-2 col-md-2 mega-lists">
             <ul>
               <li>
@@ -213,15 +213,15 @@
 
           <div class="gateway-ad-holder col-md-8">
             <div class="img-ad-gateway">
-           <img src="@/assets/background/p.jpg" alt />
-          </div>
-          <div class="img-ad-gateway">
-            <img src="@/assets/background/p.jpg" alt />
-          </div>
+              <img src="@/assets/background/p.jpg" alt />
+            </div>
+            <div class="img-ad-gateway">
+              <img src="@/assets/background/p.jpg" alt />
+            </div>
 
-          <div class="img-ad-gateway">
-            <img  src="@/assets/background/p.jpg" alt />
-          </div>
+            <div class="img-ad-gateway">
+              <img src="@/assets/background/p.jpg" alt />
+            </div>
           </div>
         </div>
       </div>
@@ -281,7 +281,7 @@ export default {};
       .menu-holder {
         display: inline-flex;
         width: 100%;
-        padding: 0.5em .51em 0.6em;
+        padding: 0.5em 0.51em 0.6em;
         max-height: 14em;
 
         .mega-lists {
@@ -310,22 +310,22 @@ export default {};
           padding-left: 0.2em;
           padding-right: 0;
         }
-        .gateway-ad-holder{
+        .gateway-ad-holder {
           display: grid;
-          grid-gap: .5em;
+          grid-gap: 0.5em;
           grid-template-columns: 1fr 1fr 1fr;
           padding: 0;
-              margin-left: .2em;
-          .img-ad-gateway{
+          margin-left: 0.2em;
+          .img-ad-gateway {
             height: 100%;
           }
-            .img-ad-gateway img {
-          max-width: 100%;
-    max-height: 100%;
+          .img-ad-gateway img {
+            max-width: 100%;
+            max-height: 100%;
             height: 100%;
-    width: 100%;
-      border-radius: .3em;
-        }
+            width: 100%;
+            border-radius: 0.3em;
+          }
         }
         #last-img {
           padding-left: 0.2em;
@@ -335,12 +335,12 @@ export default {};
     }
   }
   #menu-img {
-          max-width: 100%;
+    max-width: 100%;
     max-height: 100%;
-            height: 100%;
+    height: 100%;
     width: 100%;
-      border-radius: .3em;
-        }
+    border-radius: 0.3em;
+  }
   #local:hover {
     #local-dropdown-content {
       display: block;
@@ -352,8 +352,19 @@ export default {};
     }
   }
   #gateways-dropdown-content:hover {
-    #gateways-dropdown-menu-holder{
+    #gateways-dropdown-menu-holder {
       display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-container {
+    .menu-item {
+      .dropdown-content {
+        left: 2%;
+        right: 2%;
+      }
     }
   }
 }

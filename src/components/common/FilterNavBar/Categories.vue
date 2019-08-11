@@ -1,24 +1,19 @@
 <template>
-    <div class="category-selector">
-      <v-select
-      class="category-selector"
-      :options="options" />
-    </div>
+  <div class="category-selector">
+    <v-select class="category-selector" :options="options" />
+  </div>
 </template>
 
 <script>
-import vSelect from 'vue-select'
+import vSelect from "vue-select";
 export default {
   components: {
-    'v-select': vSelect
+    "v-select": vSelect
   },
-  data: {
-    options: [
-      "local",
-      "things to do"
-    ]
+  data() {
+    options: ["local", "things to do"];
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

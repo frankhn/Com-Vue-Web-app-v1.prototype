@@ -4,7 +4,7 @@
     <div class="mega-menu-container">
       <MegaMenu />
     </div>
-    <hr id="divider"/>
+    <hr id="divider" />
     <div class="div-container">
       <BuyProduct />
     </div>
@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import BuyProduct from "@/components/layout/product/BuyProduct.vue"
-import Footer from "@/components/common/AppFooter.vue"
-import MegaMenu from '@/components/common/megamenu/Index.vue'
-import AppHeader from "@/components/common/AppHeader.vue"
+import BuyProduct from "@/components/layout/product/BuyProduct.vue";
+import Footer from "@/components/common/AppFooter.vue";
+import MegaMenu from "@/components/common/megamenu/Index.vue";
+import AppHeader from "@/components/common/AppHeader.vue";
 
 export default {
   name: "product",
@@ -35,7 +35,7 @@ export default {
   margin-top: 1em;
 }
 #divider {
-  margin:0;
+  margin: 0;
 }
 .mega-menu-container {
   padding: 0 10%;

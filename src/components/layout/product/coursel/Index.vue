@@ -1,13 +1,10 @@
 <template>
-
+  <div class="coursel"></div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>

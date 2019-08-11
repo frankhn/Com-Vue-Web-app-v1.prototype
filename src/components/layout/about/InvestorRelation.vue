@@ -1,5 +1,6 @@
 <template>
-    
+    <div class="investor">
+    </div>
 </template>
 
 <script>

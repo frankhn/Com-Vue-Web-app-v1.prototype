@@ -1,5 +1,5 @@
 <template>
-   <div class="menu-container">
+  <div class="menu-container">
     <div class="menu-item">
       <a href="#" id="featuredlinknav">Featured</a>
     </div>
@@ -17,15 +17,13 @@
     </div>
 
     <div class="menu-item">
-        <a href="#">Settings</a>
+      <a href="#">Settings</a>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style lang="scss" scoped>

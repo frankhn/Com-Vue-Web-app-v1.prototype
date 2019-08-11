@@ -32,7 +32,8 @@
           </div>
           <div class="thumb">
             <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
-          </div><div class="thumb">
+          </div>
+          <div class="thumb">
             <img id="singleproductimage" alt src="@/assets/background/p.jpg" />
           </div>
           <div class="thumb">
@@ -49,9 +50,8 @@
       <Options />
     </section>
     <div class="details-keeper">
-    <Details />
-    <div class="empty-palce">
-    </div>
+      <Details />
+      <div class="empty-palce"></div>
     </div>
   </div>
 </template>
@@ -74,7 +74,7 @@ export default {
   grid-template-columns: 2fr 1fr;
   // grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
   grid-gap: 1em;
-grid-template-rows: 29em;
+  grid-template-rows: 29em;
 
   .big-photo {
     // display: grid;
@@ -87,29 +87,29 @@ grid-template-rows: 29em;
       }
     }
     .thumbnails {
-    display: flex;
-    height: 20%;
-    
-    overflow: auto;
-  .thumb {
-     img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  }
+      display: flex;
+      height: 20%;
+
+      overflow: auto;
+      .thumb {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
     }
   }
   .details-keeper {
     display: grid;
-grid-template-columns: 2fr 1fr;
-grid-gap: 1em;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;
   }
 }
 .details-keeper {
-    display: grid;
-grid-template-columns: 2fr 1fr;
-grid-gap: 1em;
-margin-top: 1em;
-  }
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1em;
+  margin-top: 1em;
+}
 </style>
