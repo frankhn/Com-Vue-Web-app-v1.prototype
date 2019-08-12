@@ -1,27 +1,143 @@
 <template>
-  <div class="category-selector">
-    <v-select class="category-selector" :options="options" />
-  </div>
+  <div class="btn-group">
+      <button
+        type="button"
+        @click="show = !show"
+        class="btn btn-default dropdown-toggle"
+        data-toggle="dropdown"
+      >
+        {{currentCategory}}
+        <span class="caret"></span>
+      </button>
+      <transition name="dropdown">
+        <div class="header__dropdown-menu" v-bind:class="{ active: show }" v-if="show">
+          <ul class="header__dropdown-menu-nav">
+            <li class="header__dropdown-menu-item"><button class="category-btn">Local</button></li>
+            <li class="header__dropdown-menu-item">Goods</li>
+            <li class="header__dropdown-menu-item">gateways</li>
+            <li class="header__dropdown-menu-item">Flash Deals</li>
+            <li class="header__dropdown-menu-item">Best sellers</li>
+            <li class="header__dropdown-menu-item"><button class="category-btn">Recommendend</button></li>
+            <li class="header__dropdown-menu-item">Promoted</li>
+            <li class="header__dropdown-menu-item">Trending</li>
+            <li class="header__dropdown-menu-item">Best sellers</li>
+            <li class="header__dropdown-menu-item">Recommendend</li>
+            <li class="header__dropdown-menu-item">Promoted</li>
+            <li class="header__dropdown-menu-item">Trending</li>
+            <li class="header__dropdown-menu-item">Best sellers</li>
+            <li class="header__dropdown-menu-item">Recommendend</li>
+            <li class="header__dropdown-menu-item">Promoted</li>
+            <li class="header__dropdown-menu-item">Trending</li>
+          </ul>
+        </div>
+      </transition>
+    </div>
+  <!-- </div> -->
 </template>
 
 <script>
-import vSelect from "vue-select";
 export default {
-  components: {
-    "v-select": vSelect
+  data: function() {
+    return {
+      show: false,
+      currentCategory: 'Recommendend'
+    };
   },
-  data() {
-    options: ["local", "things to do"];
+  created() {
+    window.addEventListener("click", this.close);
+  },
+  beforeDestroy() {
+    window.removeEventListener("click", this.close);
+  },
+
+  methods: {
+    toggle() {
+      this.open = !this.open;
+    },
+
+    close(e) {
+      if (!this.$el.contains(e.target)) {
+        this.show = false;
+      }
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.category-selector {
-  position: absolute;
-  // font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-  // text-rendering: optimizelegibility;
-  // -moz-osx-font-smoothing: grayscale;
-  // -moz-text-size-adjust: none;
+.btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+      margin-bottom: .2em;
+
+  li {
+    list-style-type: none;
+  }
+  button:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  .btn:focus {
+    outline: 0 !important;
+  }
+.btn {
+  cursor: pointer;
+      background: #53a831;
+      color: white;
+      border: none;
+}
+.btn:hover {
+  color: white;
+}
+  .header {
+    &--btn {
+      cursor: pointer;
+      background: #53a831;
+      color: white;
+      border: none;
+    }
+     &--btn:hover {
+      color: white;
+    }
+    &__dropdown-menu {
+      position: absolute;
+      top: 100%;
+      height: 15rem;
+      padding: 0;
+    overflow-y: auto;
+      min-width: max-content;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+      background-color: white;
+      border: 1px solid #dadce0;
+      background-clip: padding-box;
+    }
+    &__dropdown-menu-nav {
+      padding: 0 1em;
+
+      .category-btn {
+        border: none;
+        padding: 0;
+            margin: .3em 0;
+      }
+    }
+  }
+  .dropdown-enter-active,
+  .dropdown-leave-active {
+    transition: all 200ms;
+  }
+  .dropdown-enter,
+  .dropdown-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  @media screen and (max-width: 1000px) {
+    .menu-container {
+      .navbar {
+        padding: 0.2em 2%;
+      }
+    }
+  }
 }
 </style>
