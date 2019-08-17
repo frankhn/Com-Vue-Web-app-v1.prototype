@@ -25,7 +25,9 @@
             <i class="fa fa-bell fa-2x"></i>
           </li>
           <li class="nav-item">
+            <router-link to="/me/frank">
             <i class="fa fa-user-circle fa-2x" />
+            </router-link>
           </li>
           <li class="nav-item">
             <svg
@@ -47,7 +49,7 @@
               <div class="header__dropdown-menu" v-bind:class="{ active: show }" v-if="show">
                 <ul class="header__dropdown-menu-nav">
                   <li class="header__dropdown-menu-item">
-                    <router-link to="/me/frank" class="header__dropdown-menu-link" title="Account">
+                    <router-link to="/dashboard" class="header__dropdown-menu-link" title="Account">
                       <div class="header__dropdown-menu-svg">
                         <svg viewBox="0 0 496 512" class="header--icon">
                           <path
@@ -55,7 +57,7 @@
                           />
                         </svg>
                       </div>
-                      <div class="header__dropdown-menu-text">Profile</div>
+                      <div class="header__dropdown-menu-text">Sell</div>
                     </router-link>
                   </li>
                   <li class="header__dropdown-menu-item">
@@ -210,7 +212,7 @@ export default {
   .navbar-nav {
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 1em;
+    grid-gap: 2em;
 
     .nav-item {
       #apps-svg {

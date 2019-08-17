@@ -1,19 +1,19 @@
 <template>
   <div class="menu-container">
     <div class="menu-item">
-      <a href="#" id="featuredlinknav">Featured</a>
+      <a href="#" id="featuredlinknav">Profile</a>
     </div>
 
     <div class="menu-item" id="local">
-      <a href="#">Local</a>
+      <a href="#">Wishlist</a>
     </div>
 
     <div class="menu-item">
-      <a href="#">Gateways</a>
+      <a href="#">Orders</a>
     </div>
 
     <div class="menu-item">
-      <a id="localdropdownlinkfeatured" href="#">Flash Deals</a>
+      <a id="localdropdownlinkfeatured" href="#">Network</a>
     </div>
 
     <div class="menu-item">

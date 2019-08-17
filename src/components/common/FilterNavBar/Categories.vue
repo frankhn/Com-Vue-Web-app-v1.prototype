@@ -66,9 +66,6 @@ export default {
 
 <style lang="scss" scoped>
 .btn-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-flow: column;
       margin-bottom: .2em;
 
   li {
@@ -83,12 +80,9 @@ export default {
   }
 .btn {
   cursor: pointer;
-      background: #53a831;
-      color: white;
-      border: none;
-}
-.btn:hover {
-  color: white;
+      background: #fff;
+      color: #656363;
+      border: 1px solid #d6d2d2;
 }
   .header {
     &--btn {

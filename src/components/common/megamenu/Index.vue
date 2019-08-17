@@ -15,19 +15,16 @@
                 <router-link id="dropdownlinks" to="/browse/category/:query">Personal services</router-link>
               </li>
               <li>
-                <a id="dropdownlinks" href="#">Health & Fitness</a>
+                <a id="dropdownlinks" href="#">Home Services</a>
               </li>
               <li>
-                <a id="dropdownlinks" href="#">Learning</a>
+                <a id="dropdownlinks" href="#">Health & Fitness</a>
               </li>
               <li>
                 <a id="dropdownlinks" href="#">Foods & Drinks</a>
               </li>
               <li>
-                <a id="dropdownlinks" href="#">Home Services</a>
-              </li>
-              <li>
-                <a id="dropdownlinks" href="#">Retails</a>
+                <a id="dropdownlinks" href="#">Beauty & Spas</a>
               </li>
             </ul>
           </div>
@@ -38,40 +35,22 @@
                 <a id="dropdownlinks" href="#">Things To Do</a>
               </li>
               <li>
-                <a id="dropdownlinks" href="#">Kids Activities</a>
-              </li>
-              <li>
-                <a id="dropdownlinks" href="#">Entertainment</a>
-              </li>
-              <li>
-                <a id="dropdownlinks" href="#">Beauty & Spas</a>
-              </li>
-              <li>
-                <a id="dropdownlinks" href="#">Women's salon</a>
-              </li>
-              <li>
-                <a id="dropdownlinks" href="#">Team Sports</a>
+                <a id="dropdownlinks" href="#">Community</a>
               </li>
             </ul>
           </div>
 
-          <div class="col-md-2 mega-lists">
-            <ul>
-              <li>
-                <a id="dropdownlinks" href="#">Suppliers</a>
-              </li>
-              <li>
-                <a id="dropdownlinks" href="#">Movers</a>
-              </li>
-            </ul>
-          </div>
-          <div class="img-ad col-md-3">
+         <div class="gateway-ad-holder col-md-8">
+            <div class="img-ad">
             <img id="menu-img" src="@/assets/background/p.jpg" alt />
           </div>
-
-          <div class="img-ad col-md-3">
+          <div class="img-ad">
             <img id="menu-img" src="@/assets/background/p.jpg" alt />
           </div>
+          <div class="img-ad">
+            <img id="menu-img" src="@/assets/background/p.jpg" alt />
+          </div>
+         </div>
         </div>
       </div>
     </div>
@@ -272,7 +251,7 @@ export default {};
       position: absolute;
       left: 10%;
       right: 10%;
-      z-index: 1;
+      z-index: 1000;
       max-height: 14em;
       overflow: hidden;
       border: 1px solid #e8e8e8;

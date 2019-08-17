@@ -9,14 +9,14 @@
       <div class="current-category">Things To Do</div>
       <div class="filter-section">
         <Categories />
-        <!-- <Price />
+         <!-- <Price /> -->
         <Location />
-        <Map /> -->
+        <!-- <Map />  -->
       </div>
       <hr id="divider" />
-      <div class="products-section">
-        <!-- <Card /> -->
-      </div>
+      <!-- <div class="products-section"> -->
+        <Products />
+      <!-- </div> -->
     </div>
     <Footer />
   </section>
@@ -28,14 +28,17 @@ import AppHeader from "@/components/common/AppHeader.vue";
 import MegaMenu from "@/components/common/megamenu/Index.vue";
 import Categories from "@/components/common/FilterNavBar/Categories";
 import Card from "@/components/layout/product/Card.vue";
-import Map from "@/components/common/mapView/Index";
+import Products from '@/components/common/FilterNavBar/FilteredProducts'
+import Location from "@/components/common/FilterNavBar/Location";
 export default {
   components: {
     AppHeader,
     MegaMenu,
     Categories,
+    Location,
     Map,
     Card,
+    Products,
     Footer
   }
 };
@@ -54,8 +57,6 @@ export default {
   margin-top: 0.6em;
 
   .filter-section{
-        display: grid;
-    grid-auto-flow: column;
   }
 
   .products-section {
